@@ -12,16 +12,13 @@
   padding: 0;
   margin: 0;
 }
-body {
+
+.header {
   background-image: url(../imgs/headerBackground.jpg);
   height: 100vh;
   background-position: center center;
   position: relative;
   background-size: cover;
-}
-.header {
-  width: 1170px;
-  margin: auto;
 }
 
 .info {
@@ -61,4 +58,24 @@ body {
   background-color: var(--secondary-color);
   border: var(--primary-color) solid 2px;
   transition: ease 0.3s;
+}
+.wrapper {
+  padding: 120px 60px;
+}
+.container .start-text {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: normal;
+  font-size: 16px;
+}
+.container h2 {
+  font-size: 64px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
+.container p {
+  text-align: left;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
 }
