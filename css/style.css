@@ -13,6 +13,77 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.logo {
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+.logo:hover {
+  color: var(--white);
+}
+.logo span {
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+.logo_header {
+  margin-left: 2%;
+}
+
+.main_nav {
+  display: flex;
+  width: 30%;
+  float: right;
+  margin-right: 2%;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.main_nav .nav_links:hover {
+  color: var(--primary-color);
+}
+
+.main_nav li {
+  display: inline;
+  color: #ffffff;
+}
+.main_nav li a {
+  color: #ffffff;
+}
+
+.main_nav .home .nav_links:hover {
+  color: var(--primary-color);
+}
+
+.main_nav li {
+  display: inline;
+  color: #ffffff;
+  margin-top: 1%;
+}
+.main_nav li a {
+  color: #ffffff;
+}
+.main_nav li a.active {
+  color: var(--primary-color);
+}
 .header {
   background-image: url(../imgs/headerBackground.jpg);
   height: 100vh;
