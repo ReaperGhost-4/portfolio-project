@@ -16,8 +16,8 @@
 .header {
   background-image: url(../imgs/headerBackground.jpg);
   height: 100vh;
-  background-position: center center;
-  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -42,6 +42,7 @@
   font-weight: 400;
   font-size: 21px;
   color: var(--primary-color);
+  text-align: center;
 }
 .info .btn {
   color: white;
@@ -59,14 +60,13 @@
   border: var(--primary-color) solid 2px;
   transition: ease 0.3s;
 }
-.wrapper {
-  padding: 120px 60px;
-}
+
 .container .start-text {
   text-align: center;
   font-family: var(--primary-font);
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
+  margin-top: 5px;
 }
 .container h2 {
   font-size: 64px;
@@ -78,4 +78,71 @@
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 16px;
+  line-height: 30px;
+}
+.btn-learn {
+  color: white;
+  background-color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 13px;
+}
+.btn-learn:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: var(--primary-color) solid 2px;
+  transition: ease 0.3s;
+}
+
+.outline {
+  padding: 120px 40px;
+}
+
+@media (max-width: 960px) {
+  .outline {
+    padding: 0;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .info {
+    text-align: center;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 40%;
+  }
+  .info h5 {
+    font-family: var(--primary-font);
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--primary-color);
+  }
+  .info h1 {
+    font-family: var(--primary-font);
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+  }
+  .info p {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--primary-color);
+    text-align: center;
+    color: black;
+  }
+  .container h2 {
+    font-size: 50px;
+    font-family: var(--primary-font);
+    font-weight: 500;
+  }
+  .container p {
+    text-align: left;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
