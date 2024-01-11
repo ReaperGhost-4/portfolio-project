@@ -1,282 +1,187 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
 :root {
-  --primary-color: #41644a;
-  --secondary-color: #ffffff;
+  --primary-color: #00a9ff;
+  --secondary-color: #000000;
+  --white: #ffffff;
   --grey: #616161;
-  --primary-font: "Playfair Display", serif;
-}
-/*#fb0e49
-41644a*/
-* {
-  padding: 0;
-  margin: 0;
 }
 
-a {
-  text-decoration: none;
+body {
+  font-family: "Tektur", sans-serif;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  font-size: 20px;
+/* h1 {
+  font-size: 96px;
+  line-height: 1.5;
 }
 
-.logo {
-  color: var(--secondary-color);
-  font-size: 30px;
+h2 {
+  font-size: 64px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+} */
+
+.hero {
+  background-image: url(../imgs/cc.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero h3 {
+  font-size: 36px;
   font-weight: bold;
-  font-family: "Playfair Display", serif;
-}
-.logo:hover {
+  margin: 0;
   color: var(--white);
 }
-.logo span {
-  color: var(--primary-color);
-  font-size: 30px;
-  font-weight: bold;
-  font-family: "Playfair Display", serif;
-}
-.logo_header {
-  margin-left: 2%;
-}
-
-.main_nav {
-  display: flex;
-  width: 25%;
-  float: right;
-  margin-right: 2%;
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: 22px;
-  justify-content: space-evenly;
-  list-style: none;
-}
-.main_nav .nav_links:hover {
+.hero span {
   color: var(--primary-color);
 }
-
-.main_nav li {
-  display: inline;
-  color: #ffffff;
+.hero p {
+  color: var(--white);
 }
-.main_nav li a {
-  color: #ffffff;
-}
-
-.main_nav .home .nav_links:hover {
-  color: var(--primary-color);
-}
-
-.main_nav li {
-  display: inline;
-  color: #ffffff;
-  margin-top: 1%;
-}
-.main_nav li a {
-  color: #ffffff;
-}
-.main_nav li a.active {
-  color: var(--primary-color);
-}
-
-/*home section*/
-.header {
-  background-image: url(../imgs/headerBackground.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.info {
-  text-align: center;
-  position: absolute;
-  margin-top: 14%;
-  margin-left: 50%;
-}
-.info h5 {
-  font-family: var(--primary-font);
-  font-size: 60px;
-  font-weight: 400;
-}
-.info h1 {
-  font-family: var(--primary-font);
-  font-size: 80px;
-  font-weight: 500;
-}
-.info p {
-  font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 21px;
-  color: var(--primary-color);
-  text-align: center;
-}
-.info .btn {
+.btn-container {
+  background: var(--primary-color);
+  border-radius: 14px;
   color: white;
-  background-color: var(--primary-color);
-  font-family: var(--primary-font);
-  font-weight: 400;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 13px;
-}
-.info .btn:hover {
-  cursor: pointer;
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  border: var(--primary-color) solid 2px;
-  transition: ease 0.3s;
-}
-
-.container .start-text {
-  text-align: center;
-  font-family: var(--primary-font);
-  font-weight: normal;
   font-size: 18px;
-  margin-top: 5px;
+  line-height: 27px;
+  font-weight: bold;
+  padding: 10px 40px;
 }
-.container h2 {
-  font-size: 64px;
-  font-family: var(--primary-font);
-  font-weight: 500;
+
+.btn-container:hover {
+  background: var(--white);
+  border-radius: 14px;
+  color: var(--secondary-color);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  padding: 10px 40px;
 }
-.container p {
-  text-align: left;
-  font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-}
-.btn-learn {
-  color: white;
-  background-color: var(--primary-color);
-  font-family: var(--primary-font);
-  font-weight: 400;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 13px;
-}
-.btn-learn:hover {
-  cursor: pointer;
-  color: var(--primary-color);
+.mainSection {
   background-color: var(--secondary-color);
-  border: var(--primary-color) solid 2px;
-  transition: ease 0.3s;
+}
+.mainSection .text-center {
+  color: var(--primary-color);
+  text-decoration-line: underline;
+  font-family: "Tektur", sans-serif;
+  font-size: 20px;
+}
+.container .c1 {
+  padding: 40px 40px;
+  border-radius: 20px;
+  border-left: var(--primary-color) solid 1px;
+  border-right: var(--primary-color) solid 1px;
+}
+.container .c2 {
+  padding: 40px 40px;
+  border-radius: 20px;
+  border-top: var(--primary-color) solid 1px;
+  border-bottom: var(--primary-color) solid 1px;
+}
+.container .c3 {
+  padding: 40px 40px;
+  border-radius: 20px;
+  border-left: var(--primary-color) solid 1px;
+  border-right: var(--primary-color) solid 1px;
+}
+.container .row img {
+  border-radius: 20px;
+}
+.container .row .col .project-desciption h2 {
+  padding: 60px 20px 10px 50px;
+  color: var(--primary-color);
+  font-size: 50px;
+}
+.container .row .col .project-desciption p {
+  color: var(--white);
 }
 
-.outline {
-  padding: 120px 40px;
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
 
-/*about section*/
+.btn-branding-outline {
+  color: var(--white);
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
 
-.about-header {
-  background-image: url(../imgs/aboutBackground.jpg);
+.about-section {
+  background-image: url(../imgs/ab.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  padding: 80px 80px;
 }
 
-.about-section h1 {
-  font-family: var(--primary-font);
-  font-size: 60px;
-  font-weight: 500;
+.content-container .content h1 {
+  color: var(--white);
+  font-size: 70px;
 }
-.about-section h5 {
-  font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 21px;
+.content-container .content h3 {
+  color: var(--white);
+  font-size: 23px;
+  font-weight: bold;
+}
+.content-container .content span {
   color: var(--primary-color);
-  text-align: left;
 }
-.about-section p {
-  text-align: left;
-  font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
+.content-container .content p {
+  color: var(--white);
+  font-size: 13px;
 }
-
-.about-section img {
-  width: 400px;
-  height: 400px;
+.content-container .content .btn-branding {
+  color: var(--white);
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 10px 30px;
+}
+.content-container img {
+  height: 500px;
+  border-top: var(--primary-color) solid 1px;
+  border-bottom: var(--primary-color) solid 1px;
+  padding: 15px 15px;
+}
+.project-container .content mb-4 {
+  padding: 40px 40px;
+}
+.project-container .content .row h3 {
+  text-align: center;
+}
+.project-container .content .p1 img {
+  padding: 40px 40px;
   border-radius: 20px;
-  margin-top: 19%;
-}
-.about-content {
-  padding: 120px 20px;
-  margin: 20px;
+  border-left: var(--primary-color) solid 1px;
+  border-right: var(--primary-color) solid 1px;
 }
 
-@media (max-width: 960px) {
-  .outline {
-    padding: 0;
-    text-align: center;
-    margin-top: 2%;
-  }
-  .info {
-    text-align: center;
-    position: absolute;
-    margin-top: 25%;
-    margin-left: 40%;
-  }
-  .info h5 {
-    font-family: var(--primary-font);
-    font-size: 40px;
-    font-weight: 400;
-    color: var(--primary-color);
-  }
-  .info h1 {
-    font-family: var(--primary-font);
-    font-size: 50px;
-    font-weight: 500;
-    color: black;
-  }
-  .info p {
-    font-family: var(--primary-font);
-    font-weight: 400;
-    font-size: 15px;
-    color: var(--primary-color);
-    text-align: center;
-    color: black;
-  }
-  .container h2 {
-    font-size: 50px;
-    font-family: var(--primary-font);
-    font-weight: 500;
-  }
-  .container p {
-    text-align: left;
-    font-family: var(--primary-font);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .main_nav {
-    display: flex;
-    width: 35%;
-    float: right;
-    margin-right: 2%;
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-size: 22px;
-    justify-content: space-evenly;
-    list-style: none;
-  }
-  .about-content {
-    text-align: center;
-    padding: 0;
-  }
-  .about-content h5 {
-    text-align: center;
-  }
-  .about-content p {
-    text-align: center;
-  }
+.project-container .content .p2 img {
+  padding: 40px 40px;
+  border-radius: 20px;
+  border-left: var(--primary-color) solid 1px;
+  border-right: var(--primary-color) solid 1px;
 }
